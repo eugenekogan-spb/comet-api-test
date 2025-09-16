@@ -71,7 +71,7 @@ def show_run_form(db_manager: DatabaseManager):
         
         col1, col2 = st.columns(2)
         with col1:
-            model = st.text_input("Модель", value="comet-7b", help="Название модели Comet")
+            model = st.text_input("Модель", value="gpt-3.5-turbo", help="Название модели (gpt-3.5-turbo, gpt-4, etc.)")
         with col2:
             temperature = st.slider("Temperature", 0.0, 2.0, 0.7, 0.1)
         
